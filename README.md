@@ -14,9 +14,6 @@ docker build -t lenj .
 
 How to run:
 
-docker run -d --env-file .env \
---name lenj -p 80:80 -p 443:443 \
--v `pwd`/data/letsencrypt/:/etc/letsencrypt/ \
--v `pwd`/data/letsencrypt/acme:/data/letsencrypt/ \
--v `pwd`/data/jenkins:/var/jenkins_home \
-lenj
+./run.sh 
+
+or see content of "run.sh" file
